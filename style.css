@@ -1,0 +1,17 @@
+body {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffc0cb;
+  height: 100vh;
+}
+
+#resposta-certa {
+    display:none;
+}
+
+#resposta-errada {
+    display:none;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h-screen flex justify-center items-center">
+      <div class="bg-white h-5/6 w-11/12 rounded-md flex items-center flex-col">
+        <h1 class="text-3xl font-bold underline mt-4">
+          Quem é a mais fofinha?
+        </h1>
+        <div class="mb-1 w-13 mt-2">
+          <input
+            type="text"
+            id="name"
+            class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-pink-500 dark:focus:border-pink-500"
+          />
+        </div>
+        <button
+          type="button"
+          id="button"
+          class="text-white bg-pink-300 hover:bg-pink-800 focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-pink-800"
+        >
+          verificar
+        </button>
+        <div id="resposta-certa" class="flex flex-col items-center">
+          <h1 class="text-3xl font-bold mt-4">Certo!</h1>
+          <img
+            src="https://sdl-stickershop.line.naver.jp/products/0/0/5/1044/android/stickers/17283.png;compress=true"
+          />
+          <h1 class="text-3xl font-bold mt-4">muito bem!!</h1>
+        </div>
+
+        <div id="resposta-errada" class="flex flex-col items-center">
+          <h1 class="text-3xl font-bold mt-4">errado.</h1>
+          <img
+            src="https://i.pinimg.com/originals/d6/35/13/d63513b9e4b942c5bc7f88a1c3dd9753.gif"
+          />
+          <h1 class="text-3xl font-bold mt-4">não é a mais fofinha!</h1>
+        </div>
+      </div>
+    </div>
+
+<audio id="vitoria" src="./vitoria.mp3"></audio>
+<audio id="derrota" src="./derrota.mp3"></audio>
+    <script src="app.js"></script>
+  </body>
+</html>
